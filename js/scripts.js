@@ -1,3 +1,13 @@
+$(".hover").mouseleave(
+	function() {
+	  $(this).removeClass("hover");
+	}
+  );
+
+
+  
+
+
 (function($) {
 	$(document).ready(function() {
 		"use strict";
