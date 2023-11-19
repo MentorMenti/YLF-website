@@ -2211,7 +2211,7 @@ a:hover {
   list-style: none;
   text-align: center;
 }
-.news .post .post-content .social-share li.facebook a {
+.news .post .post-content .social-share li.instagram a {
   background: #475993;
 }
 .news .post .post-content .social-share li.twitter a {
@@ -2499,6 +2499,7 @@ a:hover {
 }
 .logos ul li figure img {
   height: 80px;
+  border-radius: 15%;
 }
 .logos ul li figure h6 {
   width: 100%;
