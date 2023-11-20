@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="theme-color" content="#33a16e" />
-  <title>Young Leaders Foundation</title>
+  <title>Gallery - Young Leaders Foundation</title>
   <meta name="description" content="Young Leaders Foundation" />
   <meta name="keywords"
     content="creative, works, showcase, portfolio, highlight, projects, parallax, community, digital, studio, css, animation, transition, svg, html, css" />
@@ -190,13 +190,13 @@
   <div id="topGallery">
     <div class="leader">
       <img src="./images/SarthakMittal.png" alt="President">
-      <p>John Doe</p>
-      <p>President</p>
+      <p>Sarthak Mittal</p>
+      <p>Founder and President</p>
     </div>
     <div class="leader">
       <img src="./images/AkashKumar.jpg" alt="Vice President">
-      <p>Jane Smith</p>
-      <p>Vice President</p>
+      <p>Akash Kumar</p>
+      <p>Co-Founder and Vice President</p>
     </div>
   </div>
 
@@ -211,29 +211,29 @@
         <img 
         src="images/ManviAggarwal.jpg" alt="Member 1">
         <p>Manvi Aggarwal</p>
-        <p>Secretary</p>
+        <p>Core Member</p>
       </div>
       <div class="member card">
         <img src="images/SanskritiMishra.jpg" alt="Member 2">
         <p>Sanskriti Mishra</p>
-        <p>Treasurer</p>
+        <p>Core Member</p>
       </div>
       <div class="member card">
         <img src="images/Adib Patel.jpg" alt="Member 3">
         <p>Adib Patel</p>
-        <p>Marketing Director</p>
+        <p> Core Member</p>
       </div>
 </div>
       <div id="bottomRow2">
         <div class="member card">
             <img src="images/UtkarshArjariya.jpg" alt="Member 1">
             <p>Utkarsh Arjariya</p>
-            <p>Secretary</p>
+            <p> Core Member</p>
           </div>
           <div class="member card">
             <img src="images/Khan Zubair.jpg" alt="Member 2">
             <p>Khan Zubair</p>
-            <p>Treasurer</p>
+            <p> Core Member</p>
           </div>
           
       </div>
@@ -374,7 +374,10 @@
     <div class="member-details">
       <p>Community: Young Leader C++</p>
       <p>Role: Manager</p>
-      <p>About: I'm Manvi Aggarwal, currently in my 3rd year of Btech at NSUT. Proudly serving as a Microsoft Learn Student Ambassador, I'm deeply involved as the Community Manager of Young Leaders Foundation C++ Group. My journey is driven by a passion for technology, and I'm committed to fostering a collaborative and innovative environment within the programming community.</p>
+      <p>About: I'm Manvi Aggarwal, currently in my 3rd year of Btech at NSUT. Proudly serving as a Microsoft Learn Student Ambassador, I'm deeply involved as the Community Manager of Young Leaders Foundation C++ Group.</p>
+      <p id="extraContents" style="display: none;"> My journey is driven by a passion for technology, and I'm committed to fostering a collaborative and innovative environment within the programming community..</p>
+      <!-- Read More Button -->
+      <button id="button" onclick="toggleContent('extraContents')">Read More</button>
     </div>
     <!-- Social Media Icons Section -->
     <div class="connect-now">
@@ -396,9 +399,7 @@
         function toggleContent(contentId) {
           const content = document.getElementById(contentId);
           content.style.display = content.style.display === 'none' ? 'block' : 'none';
-          content.style.display = content.style.display === 'none' ? 'block' : 'none';
-          const button = document.getElementsByClassName("button")
-          button.text = button.text ==="Read more" ? "Read less" : Ra
+         
 
 
         }
