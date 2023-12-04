@@ -60,6 +60,218 @@ body {
   overflow: hidden;
 }
 
+/* karan */
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:300,400); */
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.whiteBg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem; /* Adjust as needed */
+  padding-bottom: 3rem; /* Adjust as needed */
+}
+
+.whiteBg h2 {
+  font-size: 3rem; /* Adjust as needed */
+  margin-bottom: 1rem; /* Adjust as needed */
+}
+
+.whiteBg p {
+  margin-bottom: 1rem; /* Adjust as needed */
+}
+
+.whiteBg .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem; /* Adjust as needed */
+}
+
+.whiteBg .grid-item {
+  text-align: start;
+}
+
+.whiteBg img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem; /* Adjust as needed */
+}
+
+.whiteContainer {
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../images/white-texture.jpg") center/cover fixed no-repeat;
+}
+
+/* Add the following line to make sure the background covers the entire container */
+.whiteContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  z-index: -1;
+}
+
+section.back {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 300px;
+  background-color: rgb(198, 191, 191);
+}
+
+.whiteContainer .padding {
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+}
+.whiteContainer > .padding > div > img {
+  height: 100px;
+  aspect-ratio: 1;
+}
+
+/* Additional styling for better visibility of text and images on the background */
+.whiteContainer p,
+.gallery,
+.arrow {
+  color: #000; /* Set text color to black or your preferred color */
+}
+
+p {
+  color: #000;
+  font-size: 24px;
+}
+
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+  margin: 10px;
+  animation: floatUpDown 4s ease-in-out infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes floatUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.arrow {
+  margin-top: 20px;
+  color: #000;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.blackContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 10px; /* Adjusted padding for smaller screens */
+  min-height: 400px; /* Changed height to min-height for flexibility */
+  background: #1b1919;
+}
+
+.become-lead-content-mj {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.snip1519 {
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  position: relative;
+  width: calc(33.33% - 20px); /* Show three cards in a row for larger screens */
+  max-width: 300px; /* Limit maximum width for better responsiveness */
+  min-width: 250px; /* Limit minimum width for better responsiveness */
+  height: 20rem;
+  padding: 20px;
+  border: 5px solid #33a16e;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .snip1519 {
+    width: 100%; /* Show one card per row for smaller screens */
+    max-width: none; /* Remove maximum width restriction */
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+}
+
+.snip1519:hover {
+  transform: scale(1.05);
+}
+
+.snip1519 figcaption {
+  position: relative;
+}
+
+.snip1519 i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #3498db;
+}
+
+.snip1519 h3 {
+  font-size: 1.4em;
+  margin-top: 40px;
+  color: #333;
+}
+
+.snip1519 p {
+  margin-top: 30px;
+  font-size: 1em;
+  color: #777;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  color: white;
+  background-color: #2980b9;
+}
+
+/* Karan end */
+
 html {
   height: 100%;
 }

@@ -1,550 +1,888 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#33a16e" />
+    <title>Young Leaders Foundation</title>
+    <meta name="description" content="Young Leaders Foundation" />
+    <meta
+      name="keywords"
+      content="creative, works, showcase, portfolio, highlight, projects, parallax, community, digital, studio, css, animation, transition, svg, html, css"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="theme-color" content="#33a16e" />
-  <title>Young Leaders Foundation</title>
-  <meta name="description" content="Young Leaders Foundation" />
-  <meta name="keywords"
-    content="creative, works, showcase, portfolio, highlight, projects, parallax, community, digital, studio, css, animation, transition, svg, html, css" />
+    <!-- SOCIAL MEDIA META -->
+    <meta property="og:description" content="Young Leaders Foundation" />
+    <meta property="og:image" content="preview.html" />
+    <meta property="og:site_name" content="young_leaders" />
+    <meta property="og:title" content="Young Leaders" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
 
-  <!-- SOCIAL MEDIA META -->
-  <meta property="og:description" content="Young Leaders Foundation" />
-  <meta property="og:image" content="preview.html" />
-  <meta property="og:site_name" content="young_leaders" />
-  <meta property="og:title" content="Young Leaders" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="" />
+    <!-- TWITTER META -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@young_leaders" />
+    <meta name="twitter:creator" content="@young_leaders" />
+    <meta name="twitter:title" content="young_leaders" />
+    <meta name="twitter:description" content="Young Leaders Foundation" />
+    <meta name="twitter:image" content="preview.html" />
 
-  <!-- TWITTER META -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@young_leaders" />
-  <meta name="twitter:creator" content="@young_leaders" />
-  <meta name="twitter:title" content="young_leaders" />
-  <meta name="twitter:description" content="Young Leaders Foundation" />
-  <meta name="twitter:image" content="preview.html" />
+    <!-- FAVICON FILES -->
+    <link
+      href="ico/apple-touch-icon-144-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="144x144"
+    />
+    <link
+      href="ico/apple-touch-icon-114-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="114x114"
+    />
+    <link
+      href="ico/apple-touch-icon-72-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="72x72"
+    />
+    <link
+      href="ico/apple-touch-icon-57-precomposed.png"
+      rel="apple-touch-icon"
+    />
+    <link href="ico/favicon.ico" rel="shortcut icon" />
 
-  <!-- FAVICON FILES -->
-  <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144" />
-  <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114" />
-  <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72" />
-  <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon" />
-  <link href="ico/favicon.ico" rel="shortcut icon" />
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "DM Sans", ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+          "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol", "Noto Color Emoji";
+      }
+    </style>
 
-  <!-- CSS FILES -->
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/swiper.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 
-<body>
-  <div class="preloader">
-    <div class="inner">
-      <div class="loader">
-        <div class="trackbar">
-          <div class="loadbar"></div>
+    <script>
+      window.tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            heading: [
+              "DM Sans",
+              "ui-sans-serif",
+              "system-ui",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              '"Segoe UI"',
+              "Roboto",
+              '"Helvetica Neue"',
+              "Arial",
+              '"Noto Sans"',
+              "sans-serif",
+              '"Apple Color Emoji"',
+              '"Segoe UI Emoji"',
+              '"Segoe UI Symbol"',
+              '"Noto Color Emoji"',
+            ],
+            body: [
+              "DM Sans",
+              "ui-sans-serif",
+              "system-ui",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              '"Segoe UI"',
+              "Roboto",
+              '"Helvetica Neue"',
+              "Arial",
+              '"Noto Sans"',
+              "sans-serif",
+              '"Apple Color Emoji"',
+              '"Segoe UI Emoji"',
+              '"Segoe UI Symbol"',
+              '"Noto Color Emoji"',
+            ],
+          },
+          extend: {
+            borderRadius: {
+              global: "5px",
+            },
+            colors: {
+              primary: {
+                50: "#f8f5ff",
+                100: "#eee6fe",
+                200: "#ddcefd",
+                300: "#c1a6fc",
+                400: "#844df9",
+                500: "#4d07e4",
+                600: "#3705a3",
+                700: "#280477",
+                800: "#170245",
+                900: "#0c0123",
+                950: "#070114",
+                DEFAULT: "#570df8",
+              },
+              secondary: {
+                50: "#fff5fd",
+                100: "#ffe6f9",
+                200: "#fecdf3",
+                300: "#fea4e9",
+                400: "#fd49d3",
+                500: "#e802b3",
+                600: "#a70280",
+                700: "#79015d",
+                800: "#470136",
+                900: "#23001b",
+                950: "#140010",
+                DEFAULT: "#f002b8",
+              },
+            },
+          },
+        },
+        plugins: [
+          window.tailwind.plugin.withOptions(({ prefix = "ui" } = {}) => {
+            return ({ addVariant }) => {
+              for (let state of [
+                "open",
+                "checked",
+                "selected",
+                "active",
+                "disabled",
+              ]) {
+                addVariant(`${prefix}-${state}`, [
+                  `&[data-headlessui-state~="${state}"]`,
+                  `:where([data-headlessui-state~="${state}"]) &`,
+                ]);
+
+                addVariant(`${prefix}-not-${state}`, [
+                  `&[data-headlessui-state]:not([data-headlessui-state~="${state}"])`,
+                  `:where([data-headlessui-state]:not([data-headlessui-state~="${state}"])) &:not([data-headlessui-state])`,
+                ]);
+              }
+            };
+          }),
+        ],
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="preloader">
+      <div class="inner">
+        <div class="loader">
+          <div class="trackbar">
+            <div class="loadbar"></div>
+          </div>
         </div>
-      </div>
-      <!-- end loader -->
-      <div class="holder">
-        <span class="typewriter" id="typewriter"></span>
-      </div>
-      <!-- end holder -->
-    </div>
-    <!-- end inner -->
-  </div>
-  <!-- end preloader -->
-  <div class="transition-overlay">
-    <div class="green-layer"></div>
-    <div class="black-layer"></div>
-  </div>
-  <!-- end transition-overlay -->
-  <nav class="navigation-menu">
-    <div class="green-layer"></div>
-    <div class="black-layer"></div>
-    <div class="inner">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="youngleaders.html">Young Leaders</a></li>
-        <li><a href="showcases.html">Showcases</a></li>
-        <li><a href="news.html">News</a></li>
-        <li><a href="say-hello.html">Say Hello</a></li>
-      </ul>
-      <address>
-        Madhya Pradesh<br />
-        India
-      </address>
-    </div>
-    <!-- end inner -->
-  </nav>
-  <!-- end navigation-menu -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="Image" /></a>
-    </div>
-    <!-- end logo -->
-    <div class="email-us">
-      Say hi at
-      <a href="mailto:infomentormenti@gmail.com"><span>infomentormenti</span>@gmail.com</a>
-    </div>
-    <!-- end email-us -->
-    <div class="sandwich-nav">
-      <b>MENU</b>
-      <div class="sandwich-btn circle" id="sandwich-btn" data-dist="7">
-        <span></span> <span></span>
-      </div>
-      <!-- end sandwich-btn -->
-    </div>
-    <!-- end sandwich-nav -->
-  </nav>
-  <!-- end navbar -->
-  <header class="header">
-    <div class="slider">
-      <div class="swiper-container gallery-top">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slide-inner bg-image" data-background="images/slider/slide01.jpg"></div>
-            <!-- end slide-inner -->
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <div class="slide-inner bg-image" data-background="images/slider/slide02.jpg"></div>
-            <!-- end slide-inner -->
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <div class="slide-inner bg-image" data-background="images/slider/slide03.jpg"></div>
-            <!-- end slide-inner -->
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <div class="slide-inner bg-image" data-background="images/slider/slide04.jpg"></div>
-            <!-- end slide-inner -->
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            <div class="slide-inner bg-image" data-background="images/slider/slide05.jpg"></div>
-            <!-- end slide-inner -->
-          </div>
-          <!-- end swiper-slide -->
+        <!-- end loader -->
+        <div class="holder">
+          <span class="typewriter" id="typewriter"> </span>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-pagination"></div>
+        <!-- end holder -->
       </div>
-      <div class="swiper-container gallery-thumbs">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            Hackathons
-            <a href="#">
-              Explore Hackathons
-              <div class="plus">+</div>
-            </a>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            Speaker Sessions
-            <a href="#">
-              Explore Our Speakers
-              <div class="plus">+</div>
-            </a>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            Events
-            <a href="#">
-              Explore Events
-              <div class="plus">+</div>
-            </a>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            Mentoring Sessions
-            <a href="#">
-              Explore Free Mentoring Sessions
-              <div class="plus">+</div>
-            </a>
-          </div>
-          <!-- end swiper-slide -->
-          <div class="swiper-slide">
-            Free Resources
-            <a href="#">
-              Explore Free Handcrafted Resources
-              <div class="plus">+</div>
-            </a>
-          </div>
-          <!-- end swiper-slide -->
-        </div>
-      </div>
+      <!-- end inner -->
     </div>
-    <!-- end slider -->
-    <ul class="social-media">
-      <li>
-        <a href="https://instagram.com/mentormentiofficial"><i class="fa fa-instagram"></i></a>
-      </li>
-      <li>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/company/mentormenti/"><i class="fa fa-linkedin"></i></a>
-      </li>
-      <li>
-        <a href="https://www.youtube.com/@MentorMenti-bf9ib"><i class="fa fa-youtube-play"></i></a>
-      </li>
-    </ul>
-    <div class="scroll-down"><b>SCROLL DOWN</b><span></span></div>
-    <!-- end scroll-down -->
-  </header>
-  <!-- end header -->
-  <div class="header-spacing"></div>
-  <!-- end header-spacing -->
-  <main>
-    <section class="works">
-      <ul>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works01.svg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand1.png" alt="Image" class="brand" />
-              <h3>C++ Cell</h3>
-              <small>Pointers, System Design, DSA</small>
-              <a href="https://chat.whatsapp.com/FD8DKlm7Ft46ux0MT5WE5j">Join the Community</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works02.svg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand2.png" alt="Image" class="brand" />
-              <h3>Python Cell</h3>
-              <small>Syntax, OOPS, DSA</small>
-              <a href="https://chat.whatsapp.com/FliXhmZbPtQ9bPWZrYiNFV">Join the Community</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works03.svg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand3.png" alt="Image" class="brand" />
-              <h3>Javascript Cell</h3>
-              <small>Web Dev, Node, Mongo</small>
-              <a href="https://chat.whatsapp.com/BwpGvqEOSnF3cPiwTgcWam">Join the Community</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works04.svg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand2.png" alt="Image" class="brand" />
-              <h3>HTML/CSS Cell</h3>
-              <small>Semanatics, Styling, Libraries</small>
-              <a href="https://chat.whatsapp.com/FVHMHLRwW1yHUwWE8q7cPp">Join the Community</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works05.svg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand3.png" alt="Image" class="brand" />
-              <h3>Java Cell</h3>
-              <small>DSA, App Dev, JSP</small>
-              <a href="https://chat.whatsapp.com/L0h1WeWYVfrFcoJkb6FZQQ">Join the Community</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works06.svg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand3.png" alt="Image" class="brand" />
-              <h3>DSA Community</h3>
-              <small>DSA, System Design, Brain Teasers</small>
-              <a href="#">Join the Community</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works07.jpg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand1.png" alt="Image" class="brand" />
-              <h3>Women In Tech Cell</h3>
-              <small>Exclusive Events and Meetups</small>
-              <a href="https://chat.whatsapp.com/E7mCifrVlMv6djLdghQ90F">Join the Community</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works08.jpg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand2.png" alt="Image" class="brand" />
-              <h3>Cybersecurity Cell</h3>
-              <small>Vulnerabilities, Attack Mitigations</small>
-              <a href="../">Coming Soon</a>
-            </figcaption>
-          </figure>
-        </li>
-        <li class="wow fadeInUp">
-          <figure data-tilt>
-            <img src="images/works09.svg" alt="Image" class="thumb" />
-            <figcaption>
-              <img src="images/logo-brand3.png" alt="Image" class="brand" />
-              <h3>Linux Cell</h3>
-              <small>Basics, Bash Operations, Access Level</small>
-              <a href="../">Coming Soon</a>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-    </section>
-    <!-- end works -->
-    <section class="features-content">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 wow fadeInLeft">
-            <h2>BENEFITS WITH YOUNG LEADERS</h2>
-            <h6>
-              All of our products exist to help you customize your website and
-              add some advanced functionality lacks.
-            </h6>
-          </div>
-          <!-- end col-5 -->
-          <div class="col-lg-7">
-            <div class="row inner">
-              <div class="col-md-4 wow fadeInUp">
-                <img src="images/icon01.png" alt="Image" />
-                <h4>INDUSTRIAL EXPOSURE</h4>
-                <p>Young Leaders provides a fantastic living experience.</p>
-                <!-- <a href="#">LEARN MORE</a> -->
-              </div>
-              <!-- end col-4 -->
-              <div class="col-md-4 wow fadeInUp">
-                <img src="images/icon02.png" alt="Image" />
-                <h4>LIVE PROJECTS</h4>
-                <p>Website and add some advanced lacks.</p>
-                <!-- <a href="#">LEARN MORE</a> -->
-              </div>
-              <!-- end col-4 -->
-              <div class="col-md-4 wow fadeInUp">
-                <img src="images/icon03.png" alt="Image" />
-                <h4>NETWORKING OPPORTUNITY</h4>
-                <p>Website and add some advanced functionality.</p>
-                <!-- <a href="#">LEARN MORE</a> -->
-              </div>
-              <!-- end col-4 -->
-              <div class="col-md-4 wow fadeInUp">
-                <img src="images/icon02.png" alt="Image" />
-                <h4>EXCLUSIVE EVENTS</h4>
-                <p>Website and add some advanced functionality.</p>
-                <!-- <a href="#">LEARN MORE</a> -->
-              </div>
-              <!-- end col-4 -->
-              <div class="col-md-4 wow fadeInUp">
-                <img src="images/icon03.png" alt="Image" />
-                <h4>FREE MENTORSHIP</h4>
-                <p>Website and add some advanced functionality</p>
-                <!-- <a href="#">LEARN MORE</a> -->
-              </div>
-              <!-- end col-4 -->
-              <div class="col-md-4 wow fadeInUp">
-                <img src="images/icon01.png" alt="Image" />
-                <h4>FREE RESOURCES</h4>
-                <p>Website and add some advanced functionality</p>
-                <!-- <a href="#">LEARN MORE</a> -->
-              </div>
-              <!-- end col-4 -->
+    <!-- end preloader -->
+    <div class="transition-overlay">
+      <div class="green-layer"></div>
+      <div class="black-layer"></div>
+    </div>
+    <!-- end transition-overlay -->
+    <nav class="navigation-menu">
+      <div class="green-layer"></div>
+      <div class="black-layer"></div>
+      <div class="inner">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <address>
+          Madhya Pradesh<br />
+          India
+        </address>
+      </div>
+      <!-- end inner -->
+    </nav>
+    <!-- end navigation-menu -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"> <img src="images/logo.png" alt="Image" /> </a>
+      </div>
+      <!-- end logo -->
+      <div class="email-us">
+        Say hi at
+        <a href="mailto:infomentormenti@gmail.com">
+          <span>infomentormenti</span>@gmail.com</a
+        >
+      </div>
+      <!-- end email-us -->
+      <div class="sandwich-nav">
+        <b>MENU</b>
+        <div class="sandwich-btn circle" id="sandwich-btn" data-dist="7">
+          <span> </span> <span> </span>
+        </div>
+        <!-- end sandwich-btn -->
+      </div>
+      <!-- end sandwich-nav -->
+    </nav>
+    <!-- end navbar -->
+    <header class="header">
+      <div class="slider">
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="slide-inner bg-image"
+                data-background="images/slider/slide01.jpg"
+              ></div>
+              <!-- end slide-inner -->
             </div>
-            <!-- end row inner -->
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <div
+                class="slide-inner bg-image"
+                data-background="images/slider/slide02.jpg"
+              ></div>
+              <!-- end slide-inner -->
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <div
+                class="slide-inner bg-image"
+                data-background="images/slider/slide03.jpg"
+              ></div>
+              <!-- end slide-inner -->
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <div
+                class="slide-inner bg-image"
+                data-background="images/slider/slide04.jpg"
+              ></div>
+              <!-- end slide-inner -->
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              <div
+                class="slide-inner bg-image"
+                data-background="images/slider/slide05.jpg"
+              ></div>
+              <!-- end slide-inner -->
+            </div>
+            <!-- end swiper-slide -->
           </div>
-          <!-- end col-7 -->
+          <!-- Add Arrows -->
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- end row -->
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end features-content -->
-    <section class="full-media-content bg-image" data-background="images/hero01.jpg">
-      <div class="sides">
-        <figure class="wow fadeInLeft">
-          <img src="images/office01.jpg" alt="Image" />
-        </figure>
-      </div>
-      <!-- end sides -->
-      <div class="sides inner-content">
-        <div class="inner wow fadeInUp">
-          <h5>New Media Digital Community</h5>
-          <h2>Young Leaders Foundation</h2>
-          <p>
-            Young Leaders is a creative digital community, composed of
-            creative designers & experienced developers. You'll have your own
-            individual mentors to upskill as you want.
-          </p>
-          <a href="#">TAKE A LOOK</a>
-        </div>
-        <!-- end inner -->
-      </div>
-      <!-- end sides -->
-    </section>
-    <!-- end full-media-content -->
-    <section class="features-content">
-      <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-12">
-            <h2>SUCCESS STEPS</h2>
-            <h5>Your website and add some advanced functionality lacks.</h5>
+        <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              Hackathons
+              <a href="#">
+                Explore Hackathons
+                <div class="plus">+</div>
+              </a>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              Speaker Sessions
+              <a href="#">
+                Explore Our Speakers
+                <div class="plus">+</div>
+              </a>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              Events
+              <a href="#">
+                Explore Events
+                <div class="plus">+</div>
+              </a>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              Mentoring Sessions
+              <a href="#">
+                Explore Free Mentoring Sessions
+                <div class="plus">+</div>
+              </a>
+            </div>
+            <!-- end swiper-slide -->
+            <div class="swiper-slide">
+              Free Resources
+              <a href="#">
+                Explore Free Handcrafted Resources
+                <div class="plus">+</div>
+              </a>
+            </div>
+            <!-- end swiper-slide -->
           </div>
-          <!-- end col-12 -->
-          <div class="col-lg-4">
-            <img src="images/icon01.png" alt="Image" />
-            <h4>YOUNG LEADER</h4>
-            <p>Young Leaders provides a fantastic living experience.</p>
-            <a href="#">APPLY NOW</a>
-          </div>
-          <!-- end col-4 -->
-          <div class="col-lg-4">
-            <img src="images/icon02.png" alt="Image" />
-            <h4>COMMUNITY MENTOR</h4>
-            <p>Website and add some advanced lacks.</p>
-            <a href="#">APPLY NOW</a>
-          </div>
-          <!-- end col-4 -->
-          <div class="col-lg-4">
-            <img src="images/icon03.png" alt="Image" />
-            <h4>COMMUNITY MANAGER</h4>
-            <p>Website and add some advanced functionality.</p>
-            <a href="#">APPLY NOW</a>
-          </div>
-          <!-- end col-4 -->
         </div>
       </div>
-      <!-- end container -->
-    </section>
-    <!-- end features-content -->
-    <section class="full-media-content">
-      <div class="video-bg">
-        <video src="videos/video2.mp4" autoplay muted loop></video>
-        <!-- Video by Pressmaster: https://www.pexels.com/video/a-group-of-young-people-in-discussion-of-a-group-project-3209298/ -->
-      </div>
-      <!-- end video-bg -->
-      <div class="sides hide-mobile"></div>
-      <!-- end sides -->
-      <div class="sides inner-content">
-        <div class="inner">
-          <h5>How about starting a new</h5>
-          <h2>STUDENT CHAPTER?</h2>
-          <p>
-            To create a powerful community once, a bit of luck is enough. To
-            generate good products regularly, you need a strong foundation of
-            experienced and skilled team.
-          </p>
-          <a href="#">DISCOVER NOW</a>
-        </div>
-        <!-- end inner -->
-      </div>
-      <!-- end sides -->
-    </section>
-    <!-- end full-media-content -->
-    <section class="logos">
-      <div class="container">
+      <!-- end slider -->
+      <ul class="social-media">
+        <li>
+          <a href="https://instagram.com/mentormentiofficial">
+            <i class="fa fa-instagram"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="#"> <i class="fa fa-twitter"> </i> </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/company/mentormenti/">
+            <i class="fa fa-linkedin"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@MentorMenti-bf9ib">
+            <i class="fa fa-youtube-play"> </i>
+          </a>
+        </li>
+      </ul>
+      <div class="scroll-down"><b>SCROLL DOWN</b> <span> </span></div>
+      <!-- end scroll-down -->
+    </header>
+    <!-- end header -->
+    <div class="header-spacing"></div>
+    <!-- end header-spacing -->
+    <main>
+      <section class="works">
         <ul>
           <li class="wow fadeInUp">
-            <figure>
-              <img src="images/partners/logo01.jpg" alt="Image" />
-              <h6>CODEINBLOGS</h6>
+            <figure data-tilt>
+              <img src="images/works01.svg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand1.png" alt="Image" class="brand" />
+                <h3>C++ Cell</h3>
+                <small>Pointers, System Design, DSA</small>
+                <a href="https://chat.whatsapp.com/FD8DKlm7Ft46ux0MT5WE5j"
+                  >Join the Community</a
+                >
+              </figcaption>
             </figure>
           </li>
           <li class="wow fadeInUp">
-            <figure>
-              <img src="images/partners/logo02.jpg" alt="Image" />
-              <h6>MLSA</h6>
+            <figure data-tilt>
+              <img src="images/works02.svg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand2.png" alt="Image" class="brand" />
+                <h3>Python Cell</h3>
+                <small>Syntax, OOPS, DSA</small>
+                <a href="https://chat.whatsapp.com/FliXhmZbPtQ9bPWZrYiNFV"
+                  >Join the Community</a
+                >
+              </figcaption>
             </figure>
           </li>
           <li class="wow fadeInUp">
-            <figure>
-              <img src="images/partners/logo03.jpg" alt="Image" />
-              <h6>MENTORMENTI</h6>
+            <figure data-tilt>
+              <img src="images/works03.svg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand3.png" alt="Image" class="brand" />
+                <h3>Javascript Cell</h3>
+                <small>Web Dev, Node, Mongo</small>
+                <a href="https://chat.whatsapp.com/BwpGvqEOSnF3cPiwTgcWam"
+                  >Join the Community</a
+                >
+              </figcaption>
             </figure>
           </li>
           <li class="wow fadeInUp">
-            <figure>
-              <img src="images/partners/logo04.jpg" alt="Image" />
-              <h6>INSIDEN</h6>
+            <figure data-tilt>
+              <img src="images/works04.svg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand2.png" alt="Image" class="brand" />
+                <h3>HTML/CSS Cell</h3>
+                <small>Semanatics, Styling, Libraries</small>
+                <a href="https://chat.whatsapp.com/FVHMHLRwW1yHUwWE8q7cPp"
+                  >Join the Community</a
+                >
+              </figcaption>
             </figure>
           </li>
           <li class="wow fadeInUp">
-            <figure>
-              <img src="images/partners/logo05.jpg" alt="Image" />
-              <h6>CLUMOSS</h6>
+            <figure data-tilt>
+              <img src="images/works05.svg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand3.png" alt="Image" class="brand" />
+                <h3>Java Cell</h3>
+                <small>DSA, App Dev, JSP</small>
+                <a href="https://chat.whatsapp.com/L0h1WeWYVfrFcoJkb6FZQQ"
+                  >Join the Community</a
+                >
+              </figcaption>
             </figure>
           </li>
           <li class="wow fadeInUp">
-            <figure>
-              <img src="images/partners/logo06.jpg" alt="Image" />
-              <h6>Y. C. FEST</h6>
+            <figure data-tilt>
+              <img src="images/works06.svg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand3.png" alt="Image" class="brand" />
+                <h3>DSA Community</h3>
+                <small>DSA, System Design, Brain Teasers</small>
+                <a href="#">Join the Community</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="wow fadeInUp">
+            <figure data-tilt>
+              <img src="images/works07.jpg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand1.png" alt="Image" class="brand" />
+                <h3>Women In Tech Cell</h3>
+                <small>Exclusive Events and Meetups</small>
+                <a href="https://chat.whatsapp.com/E7mCifrVlMv6djLdghQ90F"
+                  >Join the Community</a
+                >
+              </figcaption>
+            </figure>
+          </li>
+          <li class="wow fadeInUp">
+            <figure data-tilt>
+              <img src="images/works08.jpg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand2.png" alt="Image" class="brand" />
+                <h3>Cybersecurity Cell</h3>
+                <small>Vulnerabilities, Attack Mitigations</small>
+                <a href="../">Coming Soon</a>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="wow fadeInUp">
+            <figure data-tilt>
+              <img src="images/works09.svg" alt="Image" class="thumb" />
+              <figcaption>
+                <img src="images/logo-brand3.png" alt="Image" class="brand" />
+                <h3>Linux Cell</h3>
+                <small>Basics, Bash Operations, Access Level</small>
+                <a href="../">Coming Soon</a>
+              </figcaption>
             </figure>
           </li>
         </ul>
-      </div>
-      <!-- end container -->
-    </section>
-    <!-- end logos -->
-    <footer class="footer">
-      <div class="container wow fadeIn">
-        <img src="images/logo.png" alt="Image" />
-        <h2>
-          Don't be shy and<br />
-          talk to us?
-        </h2>
-        <h5>Say hi at infomentormenti@gmail.com</h5>
-        <ul>
-          <li>
-            <a href="https://instagram.com/mentormentiofficial"><i class="fa fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/mentormenti/"><i class="fa fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@MentorMenti-bf9ib"><i class="fa fa-youtube-play"></i></a>
-          </li>
-        </ul>
-        <span>
-          © 2023 Young Leaders | Powered by MentorMenti | All Rights Reserved
-        </span>
-      </div>
-      <!-- end container -->
-    </footer>
-    <!-- end footer -->
-  </main>
-  <!-- end main -->
-  <audio id="link" src="audio/link.mp3" preload="auto"></audio>
-  <audio id="hover-audio" src="audio/hover.mp3" preload="auto"></audio>
+      </section>
+      <!-- end works -->
+      <section class="features-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 wow fadeInLeft">
+              <h2>BENEFITS WITH YOUNG LEADERS</h2>
+              <h6>
+                All of our products exist to help you customize your website and
+                add some advanced functionality lacks.
+              </h6>
+            </div>
+            <!-- end col-5 -->
+            <div class="col-lg-7">
+              <div class="row inner">
+                <div class="col-md-4 wow fadeInUp">
+                  <img src="images/icon01.png" alt="Image" />
+                  <h4>INDUSTRIAL EXPOSURE</h4>
+                  <p>Young Leaders provides a fantastic living experience.</p>
+                  <!-- <a href="#">LEARN MORE</a> -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-md-4 wow fadeInUp">
+                  <img src="images/icon02.png" alt="Image" />
+                  <h4>LIVE PROJECTS</h4>
+                  <p>Website and add some advanced lacks.</p>
+                  <!-- <a href="#">LEARN MORE</a> -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-md-4 wow fadeInUp">
+                  <img src="images/icon03.png" alt="Image" />
+                  <h4>NETWORKING OPPORTUNITY</h4>
+                  <p>Website and add some advanced functionality.</p>
+                  <!-- <a href="#">LEARN MORE</a> -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-md-4 wow fadeInUp">
+                  <img src="images/icon02.png" alt="Image" />
+                  <h4>EXCLUSIVE EVENTS</h4>
+                  <p>Website and add some advanced functionality.</p>
+                  <!-- <a href="#">LEARN MORE</a> -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-md-4 wow fadeInUp">
+                  <img src="images/icon03.png" alt="Image" />
+                  <h4>FREE MENTORSHIP</h4>
+                  <p>Website and add some advanced functionality</p>
+                  <!-- <a href="#">LEARN MORE</a> -->
+                </div>
+                <!-- end col-4 -->
+                <div class="col-md-4 wow fadeInUp">
+                  <img src="images/icon01.png" alt="Image" />
+                  <h4>FREE RESOURCES</h4>
+                  <p>Website and add some advanced functionality</p>
+                  <!-- <a href="#">LEARN MORE</a> -->
+                </div>
+                <!-- end col-4 -->
+              </div>
+              <!-- end row inner -->
+            </div>
+            <!-- end col-7 -->
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end features-content -->
+      <section
+        class="full-media-content bg-image"
+        data-background="images/hero01.jpg"
+      >
+        <div class="sides">
+          <figure class="wow fadeInLeft">
+            <img src="images/office01.jpg" alt="Image" />
+          </figure>
+        </div>
+        <!-- end sides -->
+        <div class="sides inner-content">
+          <div class="inner wow fadeInUp">
+            <h5>New Media Digital Community</h5>
+            <h2>Young Leaders Foundation</h2>
+            <p>
+              Young Leaders is a creative digital community, composed of
+              creative designers & experienced developers. You'll have your own
+              individual mentors to upskill as you want.
+            </p>
+            <a href="#">TAKE A LOOK</a>
+          </div>
+          <!-- end inner -->
+        </div>
+        <!-- end sides -->
+      </section>
+      <!-- end full-media-content -->
 
-  <!-- JS FILES -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/isotope.min.js"></script>
-  <script src="js/tilt.jquery.js"></script>
-  <script src="js/jquery.typewriter.js"></script>
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/imagesloaded.pkgd.min.js"></script>
-  <script src="js/particles.min.js"></script>
-  <script src="js/jquery.parallax.min.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
+      <section class="whiteContainer">
+        <p>Check out our gallery:</p>
+        <div class="gallery">
+          <div class="bubble">
+            <img
+              src="./images/avatar/SarthakMittal.jpg"
+              style="border-radius: 50%"
+            />
+          </div>
+          <div class="bubble">
+            <img
+              src="./images/avatar/AkashKumar.jpg"
+              style="border-radius: 50%"
+            />
+          </div>
+          <div class="bubble">
+            <img
+              src="./images/avatar/ManviAggarwal.jpg"
+              style="border-radius: 50%"
+            />
+          </div>
+          <div class="bubble">
+            <img
+              src="./images/avatar/AdibPatel.jpg"
+              style="border-radius: 50%"
+            />
+          </div>
+          <div class="bubble">
+            <img
+              src="./images/avatar/AkanshaSrivastava.jpg"
+              style="border-radius: 50%"
+            />
+          </div>
+        </div>
+        <a class="arrow" href="gallery.html">&#8595; Explore</a>
+      </section>
 
+      <section class="whiteBg w-full">
+        <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto text-center">
+          <div class="max-w-2xl mx-auto mb-10 lg:mb-14">
+            <h2
+              class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
+            >
+              Meet the Developers
+            </h2>
+            <p class="mt-1 text-gray-600 dark:text-gray-400">Creative people</p>
+          </div>
+          <div class="grid grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
+              <img
+                class="rounded-lg w-20 h-20"
+                alt="Arpan Kumar De"
+                src="https://mentormenti.com/img/faces/3.jpg"
+              />
+              <div class="sm:flex sm:flex-col sm:h-full">
+                <div>
+                  <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                    Arpan Kumar De
+                  </h3>
+                  <p class="mt-1 text-xs uppercase text-gray-500">
+                    Website Developer
+                  </p>
+                </div>
+                <div class="mt-2 sm:mt-auto space-x-2.5">
+                  <a
+                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="https://www.linkedin.com/in/arpankumarde"
+                    target="_blank"
+                  >
+                    <span class="w-3.5 h-3.5">
+                      <i class="fa fa-linkedin"></i>
+                    </span>
+                  </a>
+                  <a
+                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="https://github.com/arpankumarde"
+                    target="_blank"
+                  >
+                    <span class="w-3.5 h-3.5">
+                      <i class="fa fa-github"></i>
+                    </span>
+                  </a>
+                  <a
+                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="https://x.com/arpankumarde"
+                    target="_blank"
+                  >
+                    <span class="w-3.5 h-3.5">
+                      <i class="fa fa-twitter"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
+              <img
+                class="rounded-lg w-20 h-20"
+                alt="Karan Kumar"
+                src="images/avatar/KaranKumar.jpg"
+              />
+              <div class="sm:flex sm:flex-col sm:h-full">
+                <div>
+                  <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                    Karan Kumar
+                  </h3>
+                  <p class="mt-1 text-xs uppercase text-gray-500">
+                    Website and App Developer
+                  </p>
+                </div>
+                <div class="mt-2 sm:mt-auto space-x-2.5">
+                  <a
+                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="#"
+                    target="_blank"
+                  >
+                    <span class="w-3.5 h-3.5">
+                      <i class="fa fa-linkedin"></i>
+                    </span>
+                  </a>
+                  <a
+                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="#"
+                    target="_blank"
+                  >
+                    <span class="w-3.5 h-3.5">
+                      <i class="fa fa-github"></i>
+                    </span>
+                  </a>
+                  <a
+                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
+                    href="#"
+                    target="_blank"
+                  >
+                    <span class="w-3.5 h-3.5">
+                      <i class="fa fa-twitter"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end features-content -->
+
+      <section class="whiteContainer back">
+        <p>Check out our events:</p>
+        <div class="gallery padding">
+          <div class=" ">
+            <img src="./images/events/event01.jpg" style="border-radius: 20%" />
+          </div>
+          <div class=" ">
+            <img src="./images/events/event02.jpg" style="border-radius: 20%" />
+          </div>
+        </div>
+        <a class="arrow" href="events.html"> &#8595; Explore more Events</a>
+      </section>
+
+      <section class="features-content">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <h2>SUCCESS STEPS</h2>
+              <h5>Your website and add some advanced functionality lacks.</h5>
+            </div>
+            <!-- end col-12 -->
+            <div class="col-lg-4">
+              <img src="images/icon01.png" alt="Image" />
+              <h4>YOUNG LEADER</h4>
+              <p>Young Leaders provides a fantastic living experience.</p>
+              <a href="#">APPLY NOW</a>
+            </div>
+            <!-- end col-4 -->
+            <div class="col-lg-4">
+              <img src="images/icon02.png" alt="Image" />
+              <h4>COMMUNITY MENTOR</h4>
+              <p>Website and add some advanced lacks.</p>
+              <a href="#">APPLY NOW</a>
+            </div>
+            <!-- end col-4 -->
+            <div class="col-lg-4">
+              <img src="images/icon03.png" alt="Image" />
+              <h4>COMMUNITY MANAGER</h4>
+              <p>Website and add some advanced functionality.</p>
+              <a href="#">APPLY NOW</a>
+            </div>
+            <!-- end col-4 -->
+          </div>
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end features-content -->
+      <section class="full-media-content">
+        <div class="video-bg">
+          <video src="videos/video2.mp4" autoplay muted loop></video>
+          <!-- Video by Pressmaster: https://www.pexels.com/video/a-group-of-young-people-in-discussion-of-a-group-project-3209298/ -->
+        </div>
+        <!-- end video-bg -->
+        <div class="sides hide-mobile"></div>
+        <!-- end sides -->
+        <div class="sides inner-content">
+          <div class="inner">
+            <h5>How about starting a new</h5>
+            <h2>STUDENT CHAPTER?</h2>
+            <p>
+              To create a powerful community once, a bit of luck is enough. To
+              generate good products regularly, you need a strong foundation of
+              experienced and skilled team.
+            </p>
+            <a href="#">DISCOVER NOW</a>
+          </div>
+          <!-- end inner -->
+        </div>
+        <!-- end sides -->
+      </section>
+      <!-- end full-media-content -->
+      <section class="logos">
+        <div class="container">
+          <ul>
+            <li class="wow fadeInUp">
+              <figure>
+                <img src="images/partners/logo01.jpg" alt="Image" />
+                <h6>CODEINBLOGS</h6>
+              </figure>
+            </li>
+            <li class="wow fadeInUp">
+              <figure>
+                <img src="images/partners/logo02.jpg" alt="Image" />
+                <h6>MLSA</h6>
+              </figure>
+            </li>
+            <li class="wow fadeInUp">
+              <figure>
+                <img src="images/partners/logo03.jpg" alt="Image" />
+                <h6>MENTORMENTI</h6>
+              </figure>
+            </li>
+            <li class="wow fadeInUp">
+              <figure>
+                <img src="images/partners/logo04.jpg" alt="Image" />
+                <h6>INSIDEN</h6>
+              </figure>
+            </li>
+            <li class="wow fadeInUp">
+              <figure>
+                <img src="images/partners/logo05.jpg" alt="Image" />
+                <h6>CLUMOSS</h6>
+              </figure>
+            </li>
+            <li class="wow fadeInUp">
+              <figure>
+                <img src="images/partners/logo06.jpg" alt="Image" />
+                <h6>Y. C. FEST</h6>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end logos -->
+      <footer class="footer">
+        <div class="container wow fadeIn">
+          <img src="images/logo.png" alt="Image" />
+          <h2>
+            Don't be shy and<br />
+            talk to us?
+          </h2>
+          <h5>Say hi at infomentormenti@gmail.com</h5>
+          <ul>
+            <li>
+              <a href="https://instagram.com/mentormentiofficial">
+                <i class="fa fa-instagram"> </i>
+              </a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa fa-twitter"> </i> </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/mentormenti/">
+                <i class="fa fa-linkedin"> </i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@MentorMenti-bf9ib">
+                <i class="fa fa-youtube-play"> </i>
+              </a>
+            </li>
+          </ul>
+          <span>
+            © 2023 Young Leaders | Powered by MentorMenti | All Rights Reserved
+          </span>
+        </div>
+        <!-- end container -->
+      </footer>
+      <!-- end footer -->
+    </main>
+    <!-- end main -->
+    <audio id="link" src="audio/link.mp3" preload="auto"></audio>
+    <audio id="hover-audio" src="audio/hover.mp3" preload="auto"></audio>
+
+    <!-- JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/jquery.typewriter.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/jquery.parallax.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

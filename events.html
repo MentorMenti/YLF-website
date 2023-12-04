@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#33a16e" />
+    <title>Events - Young Leaders Foundation</title>
+    <meta name="description" content="Young Leaders Foundation" />
+    <meta
+      name="keywords"
+      content="creative, works, showcase, portfolio, highlight, projects, parallax, community, digital, studio, css, animation, transition, svg, html, css"
+    />
+
+    <!-- SOCIAL MEDIA META -->
+    <meta property="og:description" content="Young Leaders Foundation" />
+    <meta property="og:image" content="preview.html" />
+    <meta property="og:site_name" content="young_leaders" />
+    <meta property="og:title" content="Young Leaders" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+
+    <!-- TWITTER META -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@young_leaders" />
+    <meta name="twitter:creator" content="@young_leaders" />
+    <meta name="twitter:title" content="young_leaders" />
+    <meta name="twitter:description" content="Young Leaders Foundation" />
+    <meta name="twitter:image" content="preview.html" />
+
+    <!-- FAVICON FILES -->
+    <link
+      href="ico/apple-touch-icon-144-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="144x144"
+    />
+    <link
+      href="ico/apple-touch-icon-114-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="114x114"
+    />
+    <link
+      href="ico/apple-touch-icon-72-precomposed.png"
+      rel="apple-touch-icon"
+      sizes="72x72"
+    />
+    <link
+      href="ico/apple-touch-icon-57-precomposed.png"
+      rel="apple-touch-icon"
+    />
+    <link href="ico/favicon.ico" rel="shortcut icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <style>
+      body {
+        color: white;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      #topGallery {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #bottomGallery {
+      }
+      .leader {
+        flex: 1;
+        text-align: center;
+      }
+
+      .leader img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .leader:hover img {
+        transform: scale(1.1);
+      }
+
+      .leader p {
+        margin: 10px 0;
+      }
+
+      .card {
+        background-color: #fff8f8;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .card img {
+        width: 250px;
+
+        object-fit: contain;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card:hover img {
+        border-radius: 0;
+      }
+
+      .section-heading {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 24px;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+
+      .member {
+        /* Adjust the width as needed */
+        margin: 10px;
+        text-align: center;
+        transition: all ease 0.1s;
+        border: 0.5px solid rgb(187, 183, 183) y;
+      }
+      .member:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 1px 10px 1px grey, -1px -1px 10px 1px rgb(213, 213, 213);
+      }
+
+      #bottomRow1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      #bottomRowl {
+        display: flex;
+
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      #bottomRow2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      .member p {
+        margin: 10px 0;
+      }
+
+      .member-details {
+        margin-top: 10px;
+        text-align: left;
+      }
+
+      .member-details p {
+        margin: 5px 0;
+      }
+
+      .social-icons a {
+        margin-right: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      #bottomRow3 {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      #bottomRow3 .member {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(30% - 20px); /* Adjust the width as needed */
+        margin: 10px;
+        text-align: center;
+      }
+
+      #bottomRow3 .member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      #bottomRow3 .member p {
+        margin: 10px 0;
+      }
+
+      #bottomRow3 .member-details {
+        margin-top: 10px;
+        text-align: left;
+      }
+
+      #bottomRow3 .member-details p {
+        margin: 5px 0;
+      }
+
+      #bottomRow3 .social-icons a {
+        margin-right: 10px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="topGallery">
+    <div class="leader">
+      <img src="./images/avatar/SarthakMittal.jpg" alt="President">
+      <p>Sarthak Mittal</p>
+      <p>Founder and President</p>
+    </div>
+    <div class="leader">
+      <img src="./images/avatar/AkashKumar.jpg" alt="Vice President">
+      <p>Akash Kumar</p>
+      <p>Co-Founder and Vice President</p>
+    </div>
+  </div> -->
+
+    <!-- Young Leaders MVP Section -->
+    <div class="section-heading">Ours events</div>
+
+    <!-- First Section with 3 Cards -->
+    <div id="bottomRow1">
+      <div class="member card">
+        <img src="images/events/event01.jpg" alt="Member 1" />
+      </div>
+      <div class="member card">
+        <img src="images/events/event02.jpg" alt="Member 2" />
+      </div>
+      <div class="member card">
+        <img src="images/events/event08.jpg" alt="Member 3" />
+      </div>
+    </div>
+    <div id="bottomRowl">
+      <div class="member card">
+        <img src="images/events/event03.jpg" alt="Member 1" />
+      </div>
+      <div class="member card">
+        <img src="images/events/event07.jpg" alt="Member 2" />
+      </div>
+    </div>
+    <div id="bottomRow2">
+      <div class="member card">
+        <img src="images/events/event04.jpg" alt="Member 1" />
+      </div>
+      <div class="member card">
+        <img src="images/events/event05.jpg" alt="Member 2" />
+      </div>
+      <div class="member card">
+        <img src="images/events/event06.jpg" alt="Member 2" />
+      </div>
+    </div>
+  </body>
+</html>
