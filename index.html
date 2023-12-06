@@ -59,123 +59,6 @@
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "DM Sans", ui-sans-serif, system-ui, -apple-system,
-          BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-          "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol", "Noto Color Emoji";
-      }
-    </style>
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-
-    <script>
-      window.tailwind.config = {
-        darkMode: "class",
-        theme: {
-          fontFamily: {
-            heading: [
-              "DM Sans",
-              "ui-sans-serif",
-              "system-ui",
-              "-apple-system",
-              "BlinkMacSystemFont",
-              '"Segoe UI"',
-              "Roboto",
-              '"Helvetica Neue"',
-              "Arial",
-              '"Noto Sans"',
-              "sans-serif",
-              '"Apple Color Emoji"',
-              '"Segoe UI Emoji"',
-              '"Segoe UI Symbol"',
-              '"Noto Color Emoji"',
-            ],
-            body: [
-              "DM Sans",
-              "ui-sans-serif",
-              "system-ui",
-              "-apple-system",
-              "BlinkMacSystemFont",
-              '"Segoe UI"',
-              "Roboto",
-              '"Helvetica Neue"',
-              "Arial",
-              '"Noto Sans"',
-              "sans-serif",
-              '"Apple Color Emoji"',
-              '"Segoe UI Emoji"',
-              '"Segoe UI Symbol"',
-              '"Noto Color Emoji"',
-            ],
-          },
-          extend: {
-            borderRadius: {
-              global: "5px",
-            },
-            colors: {
-              primary: {
-                50: "#f8f5ff",
-                100: "#eee6fe",
-                200: "#ddcefd",
-                300: "#c1a6fc",
-                400: "#844df9",
-                500: "#4d07e4",
-                600: "#3705a3",
-                700: "#280477",
-                800: "#170245",
-                900: "#0c0123",
-                950: "#070114",
-                DEFAULT: "#570df8",
-              },
-              secondary: {
-                50: "#fff5fd",
-                100: "#ffe6f9",
-                200: "#fecdf3",
-                300: "#fea4e9",
-                400: "#fd49d3",
-                500: "#e802b3",
-                600: "#a70280",
-                700: "#79015d",
-                800: "#470136",
-                900: "#23001b",
-                950: "#140010",
-                DEFAULT: "#f002b8",
-              },
-            },
-          },
-        },
-        plugins: [
-          window.tailwind.plugin.withOptions(({ prefix = "ui" } = {}) => {
-            return ({ addVariant }) => {
-              for (let state of [
-                "open",
-                "checked",
-                "selected",
-                "active",
-                "disabled",
-              ]) {
-                addVariant(`${prefix}-${state}`, [
-                  `&[data-headlessui-state~="${state}"]`,
-                  `:where([data-headlessui-state~="${state}"]) &`,
-                ]);
-
-                addVariant(`${prefix}-not-${state}`, [
-                  `&[data-headlessui-state]:not([data-headlessui-state~="${state}"])`,
-                  `:where([data-headlessui-state]:not([data-headlessui-state~="${state}"])) &:not([data-headlessui-state])`,
-                ]);
-              }
-            };
-          }),
-        ],
-      };
-    </script>
   </head>
 
   <body>
@@ -207,8 +90,14 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="team.html">Meet the Team</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="events.html">Events</a></li>
+          <li>
+            <a
+              href="https://photos.app.goo.gl/mf4w5iHVH7moB1uj8"
+              target="_blank"
+            >
+              Events
+            </a>
+          </li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <address>
@@ -221,14 +110,14 @@
     <!-- end navigation-menu -->
     <nav class="navbar">
       <div class="logo">
-        <a href="index.html"> <img src="images/logo.png" alt="Image" /> </a>
+        <a href="/"> <img src="images/logo.png" alt="Image" /> </a>
       </div>
       <!-- end logo -->
       <div class="email-us">
         Say hi at
         <a href="mailto:infomentormenti@gmail.com">
-          <span>infomentormenti</span>@gmail.com</a
-        >
+          <span>infomentormenti</span>@gmail.com
+        </a>
       </div>
       <!-- end email-us -->
       <div class="sandwich-nav">
@@ -301,7 +190,10 @@
             <!-- end swiper-slide -->
             <div class="swiper-slide">
               Speaker Sessions
-              <a href="#">
+              <a
+                href="https://photos.app.goo.gl/mf4w5iHVH7moB1uj8"
+                target="_blank"
+              >
                 Explore Our Speakers
                 <div class="plus">+</div>
               </a>
@@ -309,7 +201,10 @@
             <!-- end swiper-slide -->
             <div class="swiper-slide">
               Events
-              <a href="#">
+              <a
+                href="https://photos.app.goo.gl/mf4w5iHVH7moB1uj8"
+                target="_blank"
+              >
                 Explore Events
                 <div class="plus">+</div>
               </a>
@@ -368,7 +263,6 @@
             <figure data-tilt>
               <img src="images/works01.svg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand1.png" alt="Image" class="brand" />
                 <h3>C++ Cell</h3>
                 <small>Pointers, System Design, DSA</small>
                 <a href="https://chat.whatsapp.com/FD8DKlm7Ft46ux0MT5WE5j">
@@ -381,7 +275,6 @@
             <figure data-tilt>
               <img src="images/works02.svg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand2.png" alt="Image" class="brand" />
                 <h3>Python Cell</h3>
                 <small>Syntax, OOPS, DSA</small>
                 <a href="https://chat.whatsapp.com/FliXhmZbPtQ9bPWZrYiNFV">
@@ -394,7 +287,6 @@
             <figure data-tilt>
               <img src="images/works03.svg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand3.png" alt="Image" class="brand" />
                 <h3>Javascript Cell</h3>
                 <small>Web Dev, Node, Mongo</small>
                 <a href="https://chat.whatsapp.com/BwpGvqEOSnF3cPiwTgcWam">
@@ -407,7 +299,6 @@
             <figure data-tilt>
               <img src="images/works04.svg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand2.png" alt="Image" class="brand" />
                 <h3>HTML/CSS Cell</h3>
                 <small>Semanatics, Styling, Libraries</small>
                 <a href="https://chat.whatsapp.com/FVHMHLRwW1yHUwWE8q7cPp">
@@ -420,7 +311,6 @@
             <figure data-tilt>
               <img src="images/works05.svg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand3.png" alt="Image" class="brand" />
                 <h3>Java Cell</h3>
                 <small>DSA, App Dev, JSP</small>
                 <a href="https://chat.whatsapp.com/L0h1WeWYVfrFcoJkb6FZQQ">
@@ -433,10 +323,9 @@
             <figure data-tilt>
               <img src="images/works06.svg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand3.png" alt="Image" class="brand" />
                 <h3>DSA Community</h3>
                 <small>DSA, System Design, Brain Teasers</small>
-                <a href="#"> Join the Community </a>
+                <a href="#">Coming Soon</a>
               </figcaption>
             </figure>
           </li>
@@ -444,7 +333,6 @@
             <figure data-tilt>
               <img src="images/works07.jpg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand1.png" alt="Image" class="brand" />
                 <h3>Women In Tech Cell</h3>
                 <small>Exclusive Events and Meetups</small>
                 <a href="https://chat.whatsapp.com/E7mCifrVlMv6djLdghQ90F">
@@ -457,10 +345,9 @@
             <figure data-tilt>
               <img src="images/works08.jpg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand2.png" alt="Image" class="brand" />
                 <h3>Cybersecurity Cell</h3>
                 <small>Vulnerabilities, Attack Mitigations</small>
-                <a href="../">Coming Soon</a>
+                <a href="#">Coming Soon</a>
               </figcaption>
             </figure>
           </li>
@@ -468,10 +355,9 @@
             <figure data-tilt>
               <img src="images/works09.svg" alt="Image" class="thumb" />
               <figcaption>
-                <img src="images/logo-brand3.png" alt="Image" class="brand" />
                 <h3>Linux Cell</h3>
                 <small>Basics, Bash Operations, Access Level</small>
-                <a href="../">Coming Soon</a>
+                <a href="#">Coming Soon</a>
               </figcaption>
             </figure>
           </li>
@@ -484,8 +370,8 @@
             <div class="col-lg-5 wow fadeInLeft">
               <h2>BENEFITS WITH YOUNG LEADERS</h2>
               <h6>
-                All of our products exist to help you customize your website and
-                add some advanced functionality lacks.
+                At Young Leaders, we're committed to empowering you with the
+                tools and knowledge you need to support your growth
               </h6>
             </div>
             <!-- end col-5 -->
@@ -494,42 +380,66 @@
                 <div class="col-md-4 wow fadeInUp">
                   <img src="images/icon01.png" alt="Image" />
                   <h4>INDUSTRIAL EXPOSURE</h4>
-                  <p>Young Leaders provides a fantastic living experience.</p>
+                  <p>
+                    Young Leaders provides a unique opportunity for industrial
+                    exposure. Through workshops, site visits, and collaborations
+                    with industry experts, youll gain practical insights and
+                    real-world experience.
+                  </p>
                   <!-- <a href="#">LEARN MORE</a> -->
                 </div>
                 <!-- end col-4 -->
                 <div class="col-md-4 wow fadeInUp">
                   <img src="images/icon02.png" alt="Image" />
                   <h4>LIVE PROJECTS</h4>
-                  <p>Website and add some advanced lacks.</p>
+                  <p>
+                    Immerse yourself in live projects that bridge theory and
+                    practice. Work on real-world scenarios, solve challenges,
+                    and witness your ideas come to life.
+                  </p>
                   <!-- <a href="#">LEARN MORE</a> -->
                 </div>
                 <!-- end col-4 -->
                 <div class="col-md-4 wow fadeInUp">
                   <img src="images/icon03.png" alt="Image" />
                   <h4>NETWORKING OPPORTUNITY</h4>
-                  <p>Website and add some advanced functionality.</p>
+                  <p>
+                    Connect with like-minded individuals, industry leaders, and
+                    mentors. Our vibrant community fosters networking, knowledge
+                    sharing, and collaboration
+                  </p>
                   <!-- <a href="#">LEARN MORE</a> -->
                 </div>
                 <!-- end col-4 -->
                 <div class="col-md-4 wow fadeInUp">
                   <img src="images/icon02.png" alt="Image" />
                   <h4>EXCLUSIVE EVENTS</h4>
-                  <p>Website and add some advanced functionality.</p>
+                  <p>
+                    Join us for exclusive events, workshops, and seminars. Stay
+                    updated on industry trends, expand your horizons, and build
+                    lasting connections.
+                  </p>
                   <!-- <a href="#">LEARN MORE</a> -->
                 </div>
                 <!-- end col-4 -->
                 <div class="col-md-4 wow fadeInUp">
                   <img src="images/icon03.png" alt="Image" />
                   <h4>FREE MENTORSHIP</h4>
-                  <p>Website and add some advanced functionality</p>
+                  <p>
+                    Access personalized guidance from seasoned professionals.
+                    Our mentorship program ensures you receive valuable insights
+                    and support.
+                  </p>
                   <!-- <a href="#">LEARN MORE</a> -->
                 </div>
                 <!-- end col-4 -->
                 <div class="col-md-4 wow fadeInUp">
                   <img src="images/icon01.png" alt="Image" />
                   <h4>FREE RESOURCES</h4>
-                  <p>Website and add some advanced functionality</p>
+                  <p>
+                    Explore our repository of resources—tutorials, templates,
+                    and tools—to enhance your skills and elevate your portfolio.
+                  </p>
                   <!-- <a href="#">LEARN MORE</a> -->
                 </div>
                 <!-- end col-4 -->
@@ -547,216 +457,147 @@
         class="full-media-content bg-image"
         data-background="images/hero01.jpg"
       >
-        <div class="sides">
+        <div class="slides">
           <figure class="wow fadeInLeft">
-            <img src="images/office01.jpg" alt="Image" />
+            <img src="images/hero01.jpg" alt="Image" />
           </figure>
         </div>
-        <!-- end sides -->
-        <div class="sides inner-content">
+        <!-- end slides -->
+        <div class="slides inner-content">
           <div class="inner wow fadeInUp">
-            <h5>New Media Digital Community</h5>
-            <h2>Young Leaders Foundation</h2>
+            <h5>YLF Community</h5>
+            <h2>Explore our events</h2>
             <p>
-              Young Leaders is a creative digital community, composed of
-              creative designers & experienced developers. You'll have your own
-              individual mentors to upskill as you want.
+              Welcome to our vibrant events community! Discover a world of
+              learning, creativity, and connection through our past and upcoming
+              events. 🌟
             </p>
-            <a href="#">TAKE A LOOK</a>
+            <a
+              href="https://photos.app.goo.gl/mf4w5iHVH7moB1uj8"
+              target="_blank"
+            >
+              TAKE A LOOK
+            </a>
           </div>
           <!-- end inner -->
         </div>
-        <!-- end sides -->
+        <!-- end slides -->
       </section>
       <!-- end full-media-content -->
-
-      <section class="whiteContainer">
-        <p>Check out our gallery:</p>
-        <div class="gallery">
-          <div class="bubble">
-            <img
-              src="./images/avatar/SarthakMittal.jpg"
-              style="border-radius: 50%"
-            />
-          </div>
-          <div class="bubble">
-            <img
-              src="./images/avatar/AkashKumar.jpg"
-              style="border-radius: 50%"
-            />
-          </div>
-          <div class="bubble">
-            <img
-              src="./images/avatar/ManviAggarwal.jpg"
-              style="border-radius: 50%"
-            />
-          </div>
-          <div class="bubble">
-            <img
-              src="./images/avatar/AdibPatel.jpg"
-              style="border-radius: 50%"
-            />
-          </div>
-          <div class="bubble">
-            <img
-              src="./images/avatar/AkanshaSrivastava.jpg"
-              style="border-radius: 50%"
-            />
-          </div>
-        </div>
-        <a class="arrow" href="gallery.html">&#8595; Explore</a>
-      </section>
-
-      <section class="whiteBg w-full">
-        <div class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto text-center">
-          <div class="max-w-2xl mx-auto mb-10 lg:mb-14">
-            <h2
-              class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
-            >
-              Meet the Developers
-            </h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">Creative people</p>
-          </div>
-          <div class="grid grid-cols-2 lg:grid-cols-3 gap-12">
-            <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-              <img
-                class="rounded-lg w-20 h-20"
-                alt="Arpan Kumar De"
-                src="https://mentormenti.com/img/faces/3.jpg"
-              />
-              <div class="sm:flex sm:flex-col sm:h-full">
-                <div>
-                  <h3 class="font-medium text-gray-800 dark:text-gray-200">
-                    Arpan Kumar De
-                  </h3>
-                  <p class="mt-1 text-xs uppercase text-gray-500">
-                    Website Developer
-                  </p>
-                </div>
-                <div class="mt-2 sm:mt-auto space-x-2.5">
-                  <a
-                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="https://www.linkedin.com/in/arpankumarde"
-                    target="_blank"
-                  >
-                    <span class="w-3.5 h-3.5">
-                      <i class="fa fa-linkedin"></i>
-                    </span>
-                  </a>
-                  <a
-                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="https://github.com/arpankumarde"
-                    target="_blank"
-                  >
-                    <span class="w-3.5 h-3.5">
-                      <i class="fa fa-github"></i>
-                    </span>
-                  </a>
-                  <a
-                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="https://x.com/arpankumarde"
-                    target="_blank"
-                  >
-                    <span class="w-3.5 h-3.5">
-                      <i class="fa fa-twitter"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-              <img
-                class="rounded-lg w-20 h-20"
-                alt="Karan Kumar"
-                src="images/avatar/KaranKumar.jpg"
-              />
-              <div class="sm:flex sm:flex-col sm:h-full">
-                <div>
-                  <h3 class="font-medium text-gray-800 dark:text-gray-200">
-                    Karan Kumar
-                  </h3>
-                  <p class="mt-1 text-xs uppercase text-gray-500">
-                    Website and App Developer
-                  </p>
-                </div>
-                <div class="mt-2 sm:mt-auto space-x-2.5">
-                  <a
-                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                    target="_blank"
-                  >
-                    <span class="w-3.5 h-3.5">
-                      <i class="fa fa-linkedin"></i>
-                    </span>
-                  </a>
-                  <a
-                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                    target="_blank"
-                  >
-                    <span class="w-3.5 h-3.5">
-                      <i class="fa fa-github"></i>
-                    </span>
-                  </a>
-                  <a
-                    class="inline-flex justify-center items-center text-gray-500 hover:text-gray-800 dark:hover:text-gray-200"
-                    href="#"
-                    target="_blank"
-                  >
-                    <span class="w-3.5 h-3.5">
-                      <i class="fa fa-twitter"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- end features-content -->
-
-      <section class="whiteContainer back">
-        <p>Check out our events:</p>
-        <div class="gallery padding">
-          <div class=" ">
-            <img src="./images/events/event01.jpg" style="border-radius: 20%" />
-          </div>
-          <div class=" ">
-            <img src="./images/events/event02.jpg" style="border-radius: 20%" />
-          </div>
-        </div>
-        <a class="arrow" href="events.html"> &#8595; Explore more Events</a>
-      </section>
 
       <section class="features-content">
         <div class="container">
           <div class="row justify-content-center text-center">
             <div class="col-12">
-              <h2>SUCCESS STEPS</h2>
-              <h5>Your website and add some advanced functionality lacks.</h5>
+              <h2>MEET THE DEVELOPERS</h2>
+              <h5>The Creative Minds</h5>
+            </div>
+            <!-- end col-12 -->
+            <div class="col-lg-4 dev-div">
+              <img
+                src="https://mentormenti.com/img/faces/3.jpg"
+                alt="Arpan Kumar De"
+              />
+              <h4>ARPAN KUMAR DE</h4>
+              <p>
+                Web Devlopment Head,<br />
+                Mentormenti and Young Leaders Foundation
+              </p>
+              <a
+                href="https://www.linkedin.com/in/arpankumarde"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/arpankumarde" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+              <a href="https://x.com/arpankumarde" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+            <!-- end col-4 -->
+            <div class="col-lg-4 dev-div">
+              <img src="images/avatar/KaranKumar.jpg" alt="Karan Kumar" />
+              <h4>KARAN KUMAR</h4>
+              <p>
+                Founder,<br />
+                Wond Mobility
+              </p>
+              <a href="https://www.linkedin.com/in/karan237" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/karannkumar" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+              <a href="https://x.com/arpankumarde" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+            <!-- end col-4 -->
+          </div>
+        </div>
+        <!-- end container -->
+      </section>
+      <!-- end features-content -->
+
+      <section
+        class="full-media-content bg-image"
+        data-background="https://mentormenti.com/img/projects/2.jpg"
+      >
+        <div class="slides">
+          <figure class="wow fadeInLeft">
+            <img src="https://mentormenti.com/img/faces/1.jpg" alt="Image" />
+          </figure>
+        </div>
+        <!-- end slides -->
+        <div class="slides inner-content">
+          <div class="inner wow fadeInUp">
+            <h5>YLF Community</h5>
+            <h2>Meet Our Young Leaders</h2>
+            <p>
+              At the Young Leaders Foundation, we believe in the power of youth
+              to shape a brighter future. Our team is a dynamic group of
+              passionate individuals who are committed to fostering positive
+              change in our community.
+            </p>
+            <a href="team.html"> KNOW THE PEOPLE BEHIND </a>
+          </div>
+          <!-- end inner -->
+        </div>
+        <!-- end slides -->
+      </section>
+      <!-- end team -->
+
+      <section class="features-content">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-12">
+              <h2>SUPPORT THE CHANGE</h2>
+              <h5></h5>
             </div>
             <!-- end col-12 -->
             <div class="col-lg-4">
-              <img
-                src="images/icon02.png"
-                alt="Image"
-                class="object-contain w-full mx-auto"
-              />
+              <img src="images/icon02.png" alt="Image" />
               <h4>COMMUNITY MENTOR</h4>
-              <p>Website and add some advanced lacks.</p>
+              <p>
+                As a community mentor, you'll play a crucial role in guiding and
+                supporting others. Your Responsibilities include Providing
+                Guidance, Facilitating Learning, Building Relationships
+              </p>
               <a href="https://forms.gle/pzmPMuT9my2jpmyx8" target="_blank">
                 APPLY NOW
               </a>
             </div>
             <!-- end col-4 -->
             <div class="col-lg-4">
-              <img
-                src="images/icon03.png"
-                alt="Image"
-                class="object-contain w-full mx-auto"
-              />
+              <img src="images/icon03.png" alt="Image" />
               <h4>COMMUNITY MANAGER</h4>
-              <p>Website and add some advanced functionality.</p>
+              <p>
+                Community managers are the heartbeat of our thriving online
+                communities. Your tasks involve Engagement, Content Creation,
+                Analytics and Growth
+              </p>
               <a href="https://forms.gle/ZwiCjKzRbCZY75dn9" target="_blank">
                 APPLY NOW
               </a>
@@ -767,15 +608,16 @@
         <!-- end container -->
       </section>
       <!-- end features-content -->
+
       <section class="full-media-content">
         <div class="video-bg">
           <video src="videos/video2.mp4" autoplay muted loop></video>
           <!-- Video by Pressmaster: https://www.pexels.com/video/a-group-of-young-people-in-discussion-of-a-group-project-3209298/ -->
         </div>
         <!-- end video-bg -->
-        <div class="sides hide-mobile"></div>
-        <!-- end sides -->
-        <div class="sides inner-content">
+        <div class="slides hide-mobile"></div>
+        <!-- end slides -->
+        <div class="slides inner-content">
           <div class="inner">
             <h5>How about starting a new</h5>
             <h2>STUDENT CHAPTER?</h2>
@@ -790,7 +632,7 @@
           </div>
           <!-- end inner -->
         </div>
-        <!-- end sides -->
+        <!-- end slides -->
       </section>
       <!-- end full-media-content -->
       <section class="logos">
