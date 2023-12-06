@@ -45,6 +45,7 @@ theme.
 
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Poppins:300,400,600,800&amp;subset=latin-ext");
+
 * {
   outline: none !important;
 }
@@ -1814,6 +1815,7 @@ a:hover {
   flex-wrap: wrap;
   padding-top: 150px;
   padding-bottom: 50px;
+  overflow-x: hidden;
 }
 .works.two-cols ul li {
   width: 50%;
