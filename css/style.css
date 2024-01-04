@@ -1707,7 +1707,6 @@ a:hover {
   font-family: "Fjalla One", sans-serif;
   border-bottom: 2px solid #fff;
   padding-bottom: 2px;
-  opacity: 0;
 }
 .works ul li figure figcaption a:hover {
   text-decoration: none;
